@@ -30,6 +30,7 @@ class 전화번호목록_이혜지 {
                 //해시맵 번호 비교 
                 if (hashMap.get(phoneNum) != null && !phoneNum.equals(phoneBook[i]))
                 answer = false;
+                return answer;
             }
         }
         
