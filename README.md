@@ -11,9 +11,14 @@
 * Commit 생성 규칙
   * 이 규칙은 ProblemSolving repo에서만 적용됩니다.
   * 닉네임:: commit description
-  * ex> movebxeax/programmers/Prob1234/Prob1234.java 의 경우 "movebxeax:: Prob1234 추가" 가 됩니다.
+  * 폴더 이름은 문제 이름을 그대로 사용합니다.
+  * ex> "기능 개발" 문제의 경우 common/programmers/기능 개발/기능 개발_이름.java, 커밋 메세지는 "common:: programmers 기능 개발_이름.java 추가" 의 형태가 됩니다.
+  * 백준의 경우 문제 고유 번호를 이름으로 대체합니다.
+  * ex> 1234번 문제의 경우 movebxeax/boj/1234/1234.java, 커밋 메세지는 "movebxeax:: BOJ 1234 추가" 의 형태가 됩니다.
 
 * 사용하는 PS 사이트 목록
   * 백준(BOJ) : https://www.acmicpc.net/
   * 프로그래머스(Programmers) : https://school.programmers.co.kr/
   * SW Expert Academy(SWEA) : https://swexpertacademy.com/
+
+* Last Updated 22.07.25.
