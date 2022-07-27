@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+class Solution {
+	public static class Rect{
+		int width;
+		int height;
+
+		public Rect(int width, int height) 
+		{
+			this.width = width;
+			this.height = height;
+		}
+	}
+
+	public int[] solution(int brown, int yellow) {
+		int[] answer = {};
+
+		ArrayList<Rect> rect = new ArrayList<>();
+
+		int totalArea = brown+yellow;
+
+		for(int i=3;i<totalArea;i++)
+		{
+			if(i > totalArea/i)
+				break;
+
+			if(totalArea % i == 0)
+				rect.add(new Rect(totalArea/i, i));
+		}
+
+		for(Rect itr : rect)
+		{
+			int brownCnt = (itr.width+itr.height) * 2 - 4;
+			int yellowCnt = (itr.width-2)*(itr.height-2);
+
+			if(brownCnt == brown && yellowCnt == yellow)
+			{
+				int[] result = new int[2];
+				result[0] = itr.width;
+				result[1] = itr.height;
+				answer = result;
+				break;
+			}
+		}
+
+		return answer;
+	}
+}
