@@ -15,7 +15,7 @@ public class Solution_단어변환 {
 	}
 	
 	public static int solution(String begin, String target, String[] words) {
-        visited = new boolean[words.length];
+        visited = new boolean[words.length]; //방문처리를
         
         dfs(begin, target, words, 0);
         return answer;
@@ -43,7 +43,7 @@ public class Solution_단어변환 {
 				}
 			}
 			
-			if (cnt == 2) {
+			if (cnt == (beginlen - 1)) { //한개 빼고 같다면
 				visited[i] = true;
 				dfs(words[i], target, words, depth + 1);
 				visited[i] = false;
