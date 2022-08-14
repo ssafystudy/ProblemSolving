@@ -1,4 +1,5 @@
 
+
 import java.util.*;
 
 public class Solution {
@@ -19,7 +20,7 @@ public class Solution {
         
         while(pq.peek() < K && pq.size() > 0) {
         	int first = pq.poll();
-            if (pq.size() == 0) {
+        	if (pq.size() == 0) {
                 return -1;
             }
         	int second = pq.poll();
@@ -29,16 +30,9 @@ public class Solution {
         	answer++;
         }
         
-        if (pq.peek() > K) {
-        	return answer;
-        } else if (pq.size() == 0) {
-        	return -1;
-        }
-        
-        
-        
-        
         return answer;
+        
+        
     }
 
 	
