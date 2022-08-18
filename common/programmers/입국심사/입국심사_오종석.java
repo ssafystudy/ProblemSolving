@@ -6,7 +6,7 @@ class Solution {
         for(int t: times) if(t>maxTime) maxTime = t;
         
         long low = 0;
-        long high = (long)maxTime * n; // (long) ㅅㅂ
+        long high = (long)maxTime * n;
         
         while(low+1 < high){
             long mid = (low + high) >>1;
