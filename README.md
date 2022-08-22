@@ -14,7 +14,7 @@
   * 폴더 이름은 문제 이름을 그대로 사용합니다.
   * ex> "기능 개발" 문제의 경우 common/programmers/기능 개발/기능 개발_이름.java, 커밋 메세지는 "movebxeax:: programmers 기능 개발_이름.java 추가" 의 형태가 됩니다.
   * 백준의 경우 문제 고유 번호를 이름으로 대체합니다.
-  * ex> 1234번 문제의 경우 movebxeax/boj/1234/1234.java, 커밋 메세지는 "movebxeax:: BOJ 1234 추가" 의 형태가 됩니다.
+  * ex> 1000번 문제의 경우 movebxeax/boj/1000/1000_A+B_변준우.java, 커밋 메세지는 "movebxeax:: boj 1000 추가" 의 형태가 됩니다.
 
 * 사용하는 PS 사이트 목록
   * 백준(BOJ) : https://www.acmicpc.net/
