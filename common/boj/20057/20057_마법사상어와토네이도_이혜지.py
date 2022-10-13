@@ -30,7 +30,7 @@ def solution(sr, sc, direction):
 N = int(input())
 map = [list(map(int, input().split())) for _ in range(N)]
 
-left = [(-1, 1, 1), (1, 1, 1), (-2, 0, 2), (2, 0, 2), (-1, 0, 5),
+left = [(-1, 1, 1), (1, 1, 1), (-2, 0, 2), (2, 0, 2), (0, -2, 5),
         (-1, 0, 7), (1, 0, 7), (-1, -1, 10), (1, -1, 10), (0, -1, 0)]
 right = [(r, -c, p) for r, c, p in left]
 down = [(-c, r, p) for r, c, p in left]
