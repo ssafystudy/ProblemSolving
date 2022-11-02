@@ -10,9 +10,7 @@ idx = homework[-1][0]
 able = []
 ans = 0
 
-while True:
-    if idx == 0:
-        break
+while idx > 0:
     for i in range(len(homework)):
         if homework[i][0] == idx:
             able.append(homework[i])
